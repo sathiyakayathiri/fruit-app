@@ -8,7 +8,7 @@ function Home() {
   const addFruit = async () => {
     if (!fruit) return;
     try {
-      const response = await fetch("http://localhost:5000/add-fruit", {
+      const response = await fetch("https://fruit-backend.vercel.app/add-fruit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
