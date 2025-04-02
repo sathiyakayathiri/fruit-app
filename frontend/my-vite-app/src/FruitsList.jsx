@@ -6,7 +6,7 @@ function FruitsList() {
   useEffect(() => {
     const fetchFruits = async () => {
       try {
-        const response = await fetch("http://localhost:5000/fruits");
+        const response = await fetch("https://fruit-backend.vercel.app/fruits");
         const data = await response.json();
         setFruits(data.fruits);
       } catch (error) {
